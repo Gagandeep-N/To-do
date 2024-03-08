@@ -1,0 +1,9 @@
+.tasks-conatiner{
+    display: flex;
+    justify-content: center;
+}
+
+.tasks-list{
+    display: flex;
+    align-items: center;   
+}

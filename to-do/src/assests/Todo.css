@@ -1,0 +1,19 @@
+.todo-container{
+    width: 500px;
+  height: 250px;
+  margin: 50px;
+  outline: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-input {
+    margin-right: 10px; 
+}
