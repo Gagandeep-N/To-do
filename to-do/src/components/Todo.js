@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import TodoItem from "./TodoItem";
-import '../assests/Todo.css'
+import '../assets/Todo.css'
 
 const Todo = () => {
 
@@ -18,9 +18,10 @@ const Todo = () => {
 
     return(
         <div className="todo-container">
+            <h1 className="heading">TODO LIST</h1>
             <div className="input-container">
             <input placeholder="Enter your task..." value={task} onChange={(e)=>setTask(e.target.value)} className="task-input"/>
-            <button onClick={handleClick}>Add Task</button>
+            <button onClick={handleClick} className="add-button">Add Task</button>
             </div>
             <TodoItem tasks={tasks}/>
         </div>

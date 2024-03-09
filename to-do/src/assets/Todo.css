@@ -1,0 +1,39 @@
+.heading{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.todo-container {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    outline: solid 1px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: #E6E6FA;
+    border-radius: 1rem;
+  }
+  
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 300px;
+    width: 100%;
+}
+
+.task-input {
+    margin-right: 10px; 
+    width: 150px;
+}
+
+.add-button{
+    cursor: pointer;
+}

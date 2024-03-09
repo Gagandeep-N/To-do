@@ -1,5 +1,6 @@
 import React from "react";
-import '../assests/TodoItem.css'
+import '../assets/TodoItem.css';
+import binImage from '../assets/Images/bin.png';
 
 const TodoItem = ({tasks}) => {
     return (
@@ -7,9 +8,13 @@ const TodoItem = ({tasks}) => {
             
                 {tasks.map((task, index) => (
                     <div className="tasks-list">
+                        <div className="check-task">
                         <div><input type="checkbox"/></div>
                     <div key={index}>{task}</div>
-                    <div> <button>Delete</button> </div>
+                    </div>
+
+
+                    <div className="delete"> <button className="delete-button"><img alt='delete' src={binImage} height="16px" width="16px"/></button> </div>
                     </div>
                 ))}
             
