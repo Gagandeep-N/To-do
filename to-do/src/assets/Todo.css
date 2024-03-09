@@ -31,7 +31,20 @@
 
 .task-input {
     margin-right: 10px; 
-    width: 150px;
+    width: auto;
+    margin-right: 10px;
+    min-width: 150px;
+}
+
+
+.add-button{
+    background-color: #9E9EFF;
+    border: transparent;
+    border-radius: 5px;
+    padding: 0.25rem;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .add-button{
