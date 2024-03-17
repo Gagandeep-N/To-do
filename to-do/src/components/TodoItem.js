@@ -15,20 +15,22 @@ const TodoItem = ({ tasks, onDelete }) => {
     }
 
     return (
-        <div className="tasks-conatiner">
-            
-            {tasks.map((task, index) => (
-                <div className="tasks-list">
-                    <div className="check-task">
-                        <div><input type="checkbox" onClick={() => checkHandler(index)} /></div>
-                        <div key={index} style={{ textDecoration: checked[index] ? "line-through" : "none" }}>{task}</div>
-                    </div>
-                    <div className="delete"> <button className="delete-button" onClick={() => onDelete(index)}><img alt='delete' src={binImage} height="16px" width="16px" /></button> </div>
+        <div className="tasks-container">
+        {tasks.map((task, index) => (
+            <div key={index} className="tasks-list">
+                <div className="check-task">
+                    <div><input type="checkbox" onClick={() => checkHandler(index)} /></div>
+                    <div style={{ textDecoration: checked[index] ? "line-through" : "none" }}>{task}</div>
                 </div>
-            ))}
-
-        </div>
-    )
+                <div className="delete">
+                    <button className="delete-button" onClick={() => onDelete(index)}>
+                        <img alt='delete' src={binImage} height="16px" width="16px" />
+                    </button>
+                </div>
+            </div>
+        ))}
+    </div>
+);
 }
 
 export default TodoItem;

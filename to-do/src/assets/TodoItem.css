@@ -16,6 +16,9 @@
     min-width: 230px;
     width: auto;
     padding: 1rem;
+    background-color: #9E9EFF;
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
 
 .check-task{
